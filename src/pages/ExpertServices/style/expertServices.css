@@ -1,0 +1,181 @@
+.expert-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background: #f2f2f2;
+}
+
+.expert-photo-large {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+  transform: scale(1.02);
+}
+
+.service-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0d3c61;
+  margin-bottom: 10px;
+}
+
+.service-desc {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.service-amount {
+  font-size: 16px;
+  font-weight: bold;
+  color: #009688;
+}
+
+.service-cover {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.book-button {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #084298;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-modal {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.modal-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.picker-group {
+  margin-bottom: 15px;
+}
+
+.picker-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.picker-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.duration-info {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-confirm {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+
